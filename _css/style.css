@@ -1,0 +1,203 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Montserrat' , sans-serif;
+}
+html,body{
+	height: 100%;
+	background:#faf9fc;
+}
+.clear{clear: both;}
+div.sidebar{
+	background-color: #2d3035;
+	height: 100%;
+	width: 300px;
+	float: left;
+}
+div.topo{
+	background-color: #26282D;
+	text-align: center;
+	padding: 20px 10px;
+}
+div.topo h3{
+	color: white;
+	font-size: 24px;
+}
+div.menu{
+	padding: 30px;
+	text-align: center;
+}
+div.menu ul{
+	list-style-type: none;
+}
+div.menu ul li{
+	padding: 10px 0;
+}
+div.menu ul li{
+	color: #717171;
+	font-size: 16px;
+	transition: 1s; 
+	text-decoration: none;
+}
+div.menu ul li a{
+	transition: 1s;
+	color: #717171;
+	font-size: 18px;
+	padding-left: 8px;
+	text-decoration: none;
+}
+div.menu li:hover{
+	color: purple;
+	font-size: 22px;
+}
+div.menu li:hover a{
+	color: white;
+	font-size: 24px;
+	text-decoration: underline;
+}
+/*Fim da SIDEBAR*/
+div.main-content{
+	float: left;
+	width: calc(100% - 300px);
+	height: 100%;
+}
+header{
+	background:white;
+	padding: 8px;
+	border-bottom: 2px solid #ccc;
+	height: 70px;
+}
+.pesquisa{float: right;}
+.icone-pesquisa{
+	background:#D6D6D6;
+	padding: 7px;
+	widows: 40px;
+	height: 28px;
+	text-align: center;
+	position: relative;
+	top: 2px;
+	color: white;
+	display: inline-block;
+}
+.pesquisa form{display: inline-block;}
+.pesquisa input[type=text]{
+	width: 200px;
+	height: 28px;
+	padding-left: 8px;
+	border: 1px solid #ccc;
+}
+.pesquisa input[type=text]:focus{outline: 0;}
+.icone-alerta{
+	cursor: pointer;
+	margin-right: 28px;
+	background:#f8edef;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	float: right;
+	position: relative;
+}
+.icone-alerta p{
+	font-size: 12px;
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	display: inline-block;
+	background:#ed7387;
+	color: white;
+	padding:2px;
+
+}
+.icone-alerta .i{
+	position: absolute;
+	left: 7px;
+	top:7px;
+	color: #ed7387;
+	font-weight: bold;
+	font-size: 18px;
+}
+.nome-usuario{float: left;}
+.nome-usuario h2{
+	margin-top: 6px;
+	font-weight: normal;
+	font-size: 23px;
+	color: #A7A7A7;
+	cursor: pointer;
+}
+.content1{
+	float: left;
+	width: 80%;
+	padding:30px;
+	overflow-y: auto;
+	height: calc(100% - 70px);
+}
+.panel{
+	width: 100%;
+	float: left;
+	padding:30px;
+	margin-top: 10px;
+	border:2px solid #ebebeb;
+	background:white;
+}
+.panel h2{
+	color: #7f7f7f;
+	font-size: 24px;
+	font-weight: normal;
+}
+.panel p{
+	color: #b2b2b2;
+	font-size: 17px;
+	margin-top: 10px;
+}
+.w50{width: 49%;}
+div.atualizacoes{
+	width: 20%;
+	float: left;
+	background:#eaebeb;
+	padding: 20px 30px;
+	height: calc(100% - 70px);
+	overflow-y: auto;
+}
+.atividades-topo h2{
+	color: #7f7f7f;
+	font-size: 23px;
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+	font-weight: normal;
+	margin-bottom: 60px;
+}
+.atividade-registro{
+	padding:25px 10px;
+	border-left:1px solid #bbbbbb;
+	border-bottom: 1px dashed #bbbbbb;
+	border-top: 1px dashed #bbbbbb;	
+	position: relative;
+}
+.atividade-registro h2{
+	color: #BBBBBB;
+	font-size: 19px;
+	font-weight: normal;
+}
+.atividade-registro p{
+	color: #b2b2b2;
+	font-size: 15px;
+}
+div.circle-atv{
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #e9ebeb;
+	border:1px solid #cccccc;
+}
+@media screen and (max-width: 768px){
+	div.atualizacoes{display: none;}
+	.content1{width: 100%;}
+	.panel{width: 100% !important;}
+	.sidebar{display: none; position: relative; z-index: 99;}
+	div.main-content{width: 100%; position: absolute; left: 0;top: 0;}
+	div.panel{margin-left: 0 !important;}
+}
